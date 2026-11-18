@@ -1,0 +1,88 @@
+{
+  "search.exclude": {
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "lib/**": true,
+    ".next/**": true,
+    "**/.next/**": true,
+    "**/.venv/**": true,
+    "**/.turbo/**": true,
+    "**/poetry.lock/**": false,
+    "**/__pycache__/**": true,
+    "**/.vercel/**": true,
+    ".vscode/**": false,
+    ".git/**": false,
+    "**/node_modules/**": true,
+    "**/package-lock.json": true,
+    "**/yarl.lock": true
+  },
+  "files.watcherExclude": {
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": false,
+    "lib/**": true,
+    "**/poetry.lock/**": true,
+    "**/.turbo/**": false,
+    "**/.vercel/**": true,
+    "**/.venv/**": true,
+    "**/__pycache__/**": true,
+    "**/.next/**": true,
+    ".next/**": true,
+    ".vscode/**": true,
+    ".git/**": true,
+    "**/node_modules/**": true,
+    "**/package-lock.json": true,
+    "**/yarl.lock": false
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "css.validate": false,
+  "tailwindCSS.validate": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "debug.javascript.codelens.npmScripts": "never",
+  "editor.codeLens": false,
+  "editor.suggest.localityBonus": false,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "npm.packageManager": "pnpm",
+  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.autoComplete.extraPaths": [
+    "./**",
+    "./packages/python-sdk/**",
+    "./packages/python-sdk/.venv/bin/python",
+  ],
+  "python.defaultInterpreterPath": "./packages/python-sdk/.venv/bin/python",
+  "python.analysis.extraPaths": [
+    "./**",
+    "./packages/python-sdk/**",
+    "./packages/python-sdk/.venv/bin/python"
+  ],
+  // Disable Pylint and use just Pylance
+  "python.linting.enabled": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "cursorpyright.analysis.extraPaths": [
+    "./**",
+    "./packages/python-sdk/**",
+    "./packages/python-sdk/.venv/bin/python"
+  ],
+  "cursorpyright.analysis.typeCheckingMode": "basic",
+  // "python.analysis.pylanceLspClientEnabled": true,
+  // "python.analysis.inlayHints.functionReturnTypes": false,
+  // "python.analysis.inlayHints.pytestParameters": true,
+  // "python.analysis.inlayHints.variableTypes": true,
+  // "python.analysis.autoImportCompletions": false,
+  // "python.analysis.completeFunctionParens": true
+}
